@@ -250,10 +250,13 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   color: var(--highlight-color);
   cursor: pointer;
 }
-.icon-form:focus {
+.icon-form:focus-within {
   fill: var(--highlight-color);
   color: var(--highlight-color);
   cursor: pointer;
+}
+.icon-form:focus-within .icon-form {
+  fill: var(--highlight-color);
 }
 .input-container {
   width: 100%;
@@ -268,7 +271,7 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
-.input-field:focus {
+.input-field:focus-within {
   border: 1px solid rgba(33, 150, 243, 1);
 }
 .input-field:hover {
@@ -668,8 +671,8 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
 .icon-send {
   width: 24px;
   height: 24px;
-  margin: 0px;
   position: absolute;
+  right: 317px;
 }
 /*Portofolio HTML*/
 
