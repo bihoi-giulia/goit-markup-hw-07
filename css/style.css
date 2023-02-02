@@ -195,8 +195,14 @@ body {
 }
 
 /*Formular Section*/
+.input-field :focus-within .label-text:focus-within {
+  outline: none;
+  border-color: var(--highlight-color);
+  fill: var(--highlight-color);
+}
 .input-checkbox {
   margin-top: 20px;
+  text-align: center;
 }
 .checkbox-replace {
   display: inline-flex;
@@ -378,7 +384,6 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   height: 75px;
 }
 /*Presentation  Section */
-
 .container-section {
   margin: 94px auto;
   max-width: 1200px;
@@ -400,31 +405,21 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   padding: 0;
   justify-content: space-between;
 }
-.overlay-presentation {
-  background-color: rgba(47, 48, 58, 0.8);
-  width: 370px;
-  height: 70px;
-  position: absolute;
-  opacity: 0.7;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  transition: transform 250ms ease-in;
-}
-.text-presentation {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding: 10px;
-}
-
-.img-list-presentation {
-  overflow: hidden;
+.container-img {
   position: relative;
+}
+.img-device {
+  display: block;
+}
+.overlay-img {
+  position: absolute;
+  bottom: 0;
+  background: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  padding: 27px;
+  color: var(--white-color);
+  font-weight: 700;
+  text-align: center;
 }
 
 /*Team  Section */
@@ -675,15 +670,9 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   right: 317px;
 }
 /*Portofolio HTML*/
-
-/*button Section*/
 .portfolio-section {
   max-width: 1200px;
   margin: 0px auto;
-}
-
-.unstyled-list {
-  list-style-type: none;
 }
 .project-item {
   display: flex;
@@ -697,48 +686,21 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   font-size: 16px;
   line-height: 1.62;
   background-color: #f5f4fa;
-  color: rgba(33, 33, 33, 1);
+  color: #212121;
   border: transparent;
   border-radius: 4px;
   padding: 6px 22px;
 }
-.project-examples:hover {
+.project-examples:hover,
+.project-examples:focus,
+.project-examples:active {
   color: var(--white-color);
-  background: var(--highlight-color);
+  background-color: var(--highlight-color);
   cursor: pointer;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
-
-  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
-}
-/*Main section */
-
-.unstyled-list {
-  list-style-type: none;
-}
-.project-img {
-  display: flex;
-  padding: 0px;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 94px;
-}
-.project-img-list {
-  background-color: var(--white-color);
-  border: 1px solid #eeeeee;
-  overflow: hidden;
-  position: relative;
-}
-.project-img-list:hover {
-  cursor: pointer;
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
-
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
-
-  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-  border: 1px solid rgba(238, 238, 238, 1);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-list {
   font-weight: 700;
@@ -752,38 +714,56 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
 .project-profile {
   font-size: 16px;
   line-height: 1.88;
-  color: var(--gray-color);
+  color: #757575;
   margin-top: 0px;
   margin-bottom: 20px;
   margin-left: 24px;
 }
-.overlay {
-  background-color: var(--highlight-color);
-  width: 370px;
-  height: 294px;
-  position: absolute;
-  opacity: 0.7;
-  transform: translate(370px);
-  transition: transform 250ms ease-in;
+.project-img {
+  display: flex;
+  padding: 0px;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 94px;
 }
-.text-box {
-  width: 322px;
-  height: 140px;
-  color: var(--white-color);
+.project-img-list {
+  background-color: var(--white-color);
+  border: 1px solid #eeeeee;
+}
+.project-img-list:hover,
+.project-img-list:focus,
+.project-img-list:active {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.img-portfolio {
+  display: block;
+}
+.overlay-container {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translatey(100%);
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  top: 0;
+  width: 100%;
+  height: 100%;
   font-weight: 400;
   font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
-  letter-spacing: 0.03em;
-  text-align: justify;
-  justify-content: center;
-  display: flex;
-  position: absolute;
-  margin-bottom: 91px;
-  margin-top: 63px;
-  margin-right: 24px;
-  margin-left: 24px;
+  line-height: 1.55;
+  color: var(--white-color);
+  text-align: left;
+  padding: 45px 24px 0;
 }
 .project-img-list:hover .overlay {
-  transform: translateY(0);
+  transform: translatey(0);
 }
