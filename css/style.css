@@ -29,6 +29,16 @@ body {
 }
 
 /*Header styling */
+.after-link-studio ::after {
+  content: "";
+  position: absolute;
+  width: 76px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--highlight-color);
+  bottom: 375px;
+  left: 758px;
+}
 .header-page {
   border-bottom: 1px solid #ececec;
 }
@@ -670,6 +680,16 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   right: 317px;
 }
 /*Portofolio HTML*/
+.after-link::after {
+  content: "";
+  position: absolute;
+  width: 76px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--highlight-color);
+  bottom: 375px;
+  left: 758px;
+}
 .portfolio-section {
   max-width: 1200px;
   margin: 0px auto;
