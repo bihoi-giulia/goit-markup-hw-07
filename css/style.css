@@ -17,9 +17,6 @@ body {
 .unstyled-list {
   list-style-type: none;
 }
-.link {
-  text-decoration: none;
-}
 
 .container {
   width: 1200px;
@@ -33,17 +30,8 @@ body {
 }
 
 /*Header styling */
-.after-link-studio ::after {
-  content: "";
-  position: absolute;
-  width: 76px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--highlight-color);
-  bottom: 375px;
-  left: 758px;
-}
-.header-page {
+
+.page-header {
   border-bottom: 1px solid #ececec;
 }
 .header-section {
@@ -59,39 +47,38 @@ body {
   font-family: "Raleway", sans-serif;
   margin-top: 24px;
   margin-bottom: 25px;
-}
-.link {
   text-decoration: none;
 }
-.header-logo {
+
+.logo-text {
   color: var(--balck-color);
 }
-.main-nav-list {
-  display: flex;
-  padding-left: 0px;
-  margin-left: 93px;
-  flex-grow: 1;
-}
-.unstyled-list {
-  list-style-type: none;
-}
-.nav-menu-list {
+
+.nav {
   display: flex;
   padding: 0px;
   gap: 50px;
+  display: flex;
+  padding: 0px;
+  gap: 50px;
+  margin-left: 93px;
+  flex-grow: 1;
 }
 
 .nav-link {
   color: var(--balck-color);
   font-weight: 500;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .nav-link:hover {
   color: var(--highlight-color);
 }
+
 .contact-nav-list {
   display: flex;
   gap: 40px;
+  padding-left: 319px;
 }
 .contact-nav-list:hover {
   color: var(--highlight-color);
@@ -103,6 +90,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  text-decoration: none;
 }
 .nav-contact:hover {
   color: var(--highlight-color);
@@ -123,91 +111,6 @@ body {
 .contact-phone-icon:hover {
   fill: var(--highlight-color);
 }
-
-/*Main section */
-.hero-container {
-  background-color: var(--backgrounde-color);
-  height: 600px;
-  width: 1600px;
-  margin: 0 auto;
-  background-image: url(../images/imgbg.jpg);
-}
-.hero-section {
-  display: flex;
-  flex-direction: column;
-}
-.hero-title {
-  color: var(--white-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-align: center;
-  margin-top: 200px;
-  margin-bottom: 30px;
-}
-.hero-button {
-  color: var(--white-color);
-  background-color: var(--highlight-color);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  cursor: pointer;
-  border: 0px;
-  border-radius: 4px;
-  width: 200px;
-  height: 50px;
-  align-self: center;
-}
-.modal {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: var(--modal-bg-color);
-  z-index: 99;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: opacity 250ms linear, tansform 3000ms linear;
-}
-.inner-modal {
-  width: 528px;
-  height: 581px;
-  background-color: var(--white-color);
-  position: relative;
-}
-.close-modal {
-  border: 1px solid var(--close-modal-color);
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  line-height: 30px;
-  font-weight: 500;
-  cursor: pointer;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  background-color: var(--white-color);
-  align-items: center;
-  display: flex;
-  margin: auto;
-  margin-right: 8px;
-  justify-content: center;
-}
-.close-modal:hover {
-  color: var(--highlight-color);
-}
-.close-x {
-  fill: var(--black);
-}
-.is-hidden {
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(0.1);
-}
-
 /*Formular Section*/
 .input-field :focus-within .label-text:focus-within {
   outline: none;
@@ -347,20 +250,102 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   color: var(--highlight-color);
   text-decoration: underline;
 }
-/*Detailes Section */
-.description-icon {
+/*Main section */
+.hero-container {
+  background-color: var(--backgrounde-color);
+  height: 600px;
+  max-width: 1600px;
+  margin: 0 auto;
+  background-image: url(../images/imgbg.jpg);
+}
+.hero-section {
+  display: flex;
+  flex-direction: column;
+}
+.hero-title {
+  color: var(--white-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: center;
+  margin-top: 200px;
+  margin-bottom: 30px;
+}
+.hero-button {
+  color: var(--white-color);
+  background-color: var(--highlight-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  cursor: pointer;
+  border: 0px;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  align-self: center;
+}
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: var(--modal-bg-color);
+  z-index: 99;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 250ms linear, tansform 3000ms linear;
+}
+.inner-modal {
+  width: 528px;
+  height: 581px;
+  background-color: var(--white-color);
+  position: relative;
+}
+.close-modal {
+  border: 1px solid var(--close-modal-color);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 500;
+  cursor: pointer;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: var(--white-color);
+  align-items: center;
+  display: flex;
+  margin: auto;
+  margin-right: 8px;
+  justify-content: center;
+}
+.close-modal:hover {
+  color: var(--highlight-color);
+}
+.close-x {
+  fill: var(--black);
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.1);
+}
+
+/*Feature Section */
+.feature-section {
   max-width: 1200px;
   margin: 94px auto 30px;
 }
-.unstyled-list {
-  list-style-type: none;
-}
-.description-icon-list {
+
+.feature-list {
   display: flex;
   justify-content: space-between;
   padding: 0px;
 }
-.technology-icon-list {
+.feature-technology-list {
   background-color: var(--gray-bc);
   border-radius: 4px;
   width: 270px;
@@ -369,35 +354,35 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   justify-content: center;
   align-items: center;
 }
-.technology-icon {
+.feature-icon {
   width: 70px;
   height: 70px;
 }
-.container {
+.feature-container {
   max-width: 1200px;
   height: 101px;
   margin: 0 auto;
 }
-.description-item {
+.feature-description {
   display: flex;
   justify-content: space-between;
   padding: 0;
   margin-bottom: 94px;
 }
-.description-title {
+.feature-title {
   font-weight: 700;
   margin-bottom: 10px;
   width: 270px;
   margin: 0 auto;
 }
-.description-details {
+.feature-text {
   font-size: 14px;
   line-height: 1.71;
   color: var(--gray-color);
   width: 270px;
   height: 75px;
 }
-/*Presentation  Section */
+/*What we do   Section */
 .container-section {
   margin: 94px auto;
   max-width: 1200px;
@@ -411,9 +396,7 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   margin-top: 94px;
   margin-bottom: 50px;
 }
-.unstyled-list {
-  list-style-type: none;
-}
+
 .img-list {
   display: flex;
   padding: 0;
@@ -444,7 +427,7 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   height: 684px;
 }
 
-.subtitle {
+.team-subtitle {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -453,10 +436,8 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   margin-top: 94px;
   margin-bottom: 50px;
 }
-.unstyled-list {
-  list-style-type: none;
-}
-.img-team-item {
+
+.team-container {
   display: flex;
   width: 1200px;
   margin: 0 auto;
@@ -465,7 +446,7 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   justify-content: space-between;
   text-align: center;
 }
-.img-team-list {
+.team-list {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
@@ -516,7 +497,7 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
 }
 
 /*Costumers Section */
-.subtitle {
+.costumers-subtitle {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -525,9 +506,7 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   margin-top: 94px;
   margin-bottom: 50px;
 }
-.unstyled-list {
-  list-style-type: none;
-}
+
 .customers-list {
   display: flex;
   justify-content: space-between;
@@ -574,15 +553,11 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   margin-top: 24px;
   margin-bottom: 25px;
 }
-.link {
-  text-decoration: none;
-}
+
 .footer-logo {
   color: var(--white-color);
 }
-.unstyled-list {
-  list-style-type: none;
-}
+
 .contact-footer-list {
   padding: 0px;
 }
@@ -594,6 +569,7 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
 .contact-footer {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 .contact-footer:hover {
   color: var(--highlight-color);

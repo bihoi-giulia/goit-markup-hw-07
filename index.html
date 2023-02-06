@@ -20,7 +20,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
   </head>
-  <!-- Header Section -->
+  <!-- Form Section -->
   <body>
     <div class="modal is-hidden" data-modal>
       <div class="inner-modal">
@@ -93,29 +93,28 @@
         </div>
       </div>
     </div>
-    <header class="header-page">
+    <!--Header Section -->
+    <header class="page-header">
       <section class="header-section">
-        <a class="logo link" href="./index.html"
-          >Web<span class="header-logo">Studio</span></a
+        <a class="logo" href="./index.html"
+          >Web<span class="logo-text">Studio</span></a
         >
-        <nav class="main-nav-list">
-          <ul class="unstyled-list nav-menu-list">
-            <li class="main-nav-item">
-              <a class="nav-link link after-link-studio" href="./index.html"
-                >Studio
-              </a>
-            </li>
-            <li class="main-nav-item">
-              <a class="nav-link link" href="./portofolio.html">Portfolio</a>
-            </li>
-            <li class="main-nav-item">
-              <a class="nav-link link" href="">Contacts</a>
-            </li>
-          </ul>
-        </nav>
+
+        <ul class="unstyled-list nav">
+          <li>
+            <a class="nav-link" href="./index.html">Studio </a>
+          </li>
+          <li>
+            <a class="nav-link" href="./portofolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a class="nav-link" href="">Contacts</a>
+          </li>
+        </ul>
+
         <ul class="unstyled-list contact-nav-list">
           <li class="contact-nav-item">
-            <a class="nav-contact link" href="mailto:info@devstudio.com">
+            <a class="nav-contact" href="mailto:info@devstudio.com">
               <svg class="contact-icon">
                 <use href="./images/icons.svg#icon-envelope-hover"></use>
               </svg>
@@ -123,7 +122,7 @@
             >
           </li>
           <li class="contact-nav-item">
-            <a class="nav-contact link" href="tel:+12127724150">
+            <a class="nav-contact" href="tel:+12127724150">
               <svg class="contact-phone-icon">
                 <use href="./images/icons.svg#icon-telephone"></use>
               </svg>
@@ -148,59 +147,59 @@
         </section>
       </div>
 
-      <!-- Detailes Section -->
+      <!-- Feature Section -->
 
-      <section class="description-icon">
-        <ul class="unstyled-list description-icon-list">
-          <li class="technology-icon-list">
-            <svg class="technology-icon">
+      <section class="feature-section">
+        <ul class="unstyled-list feature-list">
+          <li class="feature-technology-list">
+            <svg class="feature-icon">
               <use href="./images/icons.svg#icon-antenna-1"></use>
             </svg>
           </li>
-          <li class="technology-icon-list">
-            <svg class="technology-icon">
+          <li class="feature-technology-list">
+            <svg class="feature-icon">
               <use href="./images/icons.svg#icon-clock-1"></use>
             </svg>
           </li>
-          <li class="technology-icon-list">
-            <svg class="technology-icon">
+          <li class="feature-technology-list">
+            <svg class="feature-icon">
               <use href="./images/icons.svg#icon-diagram-1"></use>
             </svg>
           </li>
-          <li class="technology-icon-list">
-            <svg class="technology-icon">
+          <li class="feature-technology-list">
+            <svg class="feature-icon">
               <use href="./images/icons.svg#icon-astronaut-1"></use>
             </svg>
           </li>
         </ul>
       </section>
 
-      <section class="container">
-        <ul class="description-item unstyled-list">
+      <section class="feature-container">
+        <ul class="feature-description unstyled-list">
           <li>
-            <h3 class="description-title">ATTENTION TO DETAILS</h3>
-            <p class="description-details">
+            <h3 class="feature-title">ATTENTION TO DETAILS</h3>
+            <p class="feature-text">
               We go into all the details and processes of your business to
               develop a customized solution.
             </p>
           </li>
           <li>
-            <h3 class="description-title">PUNCTUALITY</h3>
-            <p class="description-details">
+            <h3 class="feature-title">PUNCTUALITY</h3>
+            <p class="feature-text">
               With us, you can feel safe and secure. An important principle of
               the company: respect your time and deadlines.
             </p>
           </li>
           <li>
-            <h3 class="description-title">PLANNING</h3>
-            <p class="description-details">
+            <h3 class="feature-title">PLANNING</h3>
+            <p class="feature-text">
               You will be able to observe and participate in every phase of
               solution development and implementation.
             </p>
           </li>
           <li>
-            <h3 class="description-title">MODERN TECHNOLOGIES</h3>
-            <p class="description-details">
+            <h3 class="feature-title">MODERN TECHNOLOGIES</h3>
+            <p class="feature-text">
               We use innovative tools to solve assigned tasks. It's time to
               simplify work processes.
             </p>
@@ -208,7 +207,7 @@
         </ul>
       </section>
 
-      <!-- Presentation  Section -->
+      <!-- What we do Section -->
 
       <section class="container-section">
         <div>
@@ -254,10 +253,10 @@
       <!-- Team  Section -->
 
       <section class="team-section">
-        <h2 class="subtitle">Our Team</h2>
+        <h2 class="team-subtitle">Our Team</h2>
 
-        <ul class="unstyled-list img-team-item">
-          <li class="img-team-list">
+        <ul class="unstyled-list team-container">
+          <li class="team-list">
             <img
               width="270px"
               height="260px"
@@ -298,7 +297,7 @@
               </li>
             </ul>
           </li>
-          <li class="img-team-list">
+          <li class="team-list">
             <img
               width="270px"
               height="260px"
@@ -338,7 +337,7 @@
               </li>
             </ul>
           </li>
-          <li class="img-team-list">
+          <li class="team-list">
             <img
               width="270px"
               height="260px"
@@ -378,7 +377,7 @@
               </li>
             </ul>
           </li>
-          <li class="img-team-list">
+          <li class="team-list">
             <img
               width="270px"
               height="260px"
@@ -420,55 +419,57 @@
           </li>
         </ul>
       </section>
+
+      <!--Regular Customers-->
+      <section>
+        <h2 class="costumers-subtitle">Regular Customers</h2>
+        <ul class="unstyled-list customers-list">
+          <li>
+            <a href="#" target="_blank">
+              <svg class="customers-logo">
+                <use href="./images/icons.svg#icon-Logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <svg class="customers-logo">
+                <use href="./images/icons.svg#icon-Logo-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <svg class="customers-logo">
+                <use href="./images/icons.svg#icon-Logo-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <svg class="customers-logo">
+                <use href="./images/icons.svg#icon-Logo-3"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <svg class="customers-logo">
+                <use href="./images/icons.svg#icon-Logo-4"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <svg class="customers-logo">
+                <use href="./images/icons.svg#icon-Logo-5"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
-    <!--Regular Customers-->
-    <section>
-      <h2 class="subtitle">Regular Customers</h2>
-      <ul class="unstyled-list customers-list">
-        <li>
-          <a href="#" target="_blank">
-            <svg class="customers-logo">
-              <use href="./images/icons.svg#icon-Logo"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <svg class="customers-logo">
-              <use href="./images/icons.svg#icon-Logo-1"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <svg class="customers-logo">
-              <use href="./images/icons.svg#icon-Logo-2"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <svg class="customers-logo">
-              <use href="./images/icons.svg#icon-Logo-3"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <svg class="customers-logo">
-              <use href="./images/icons.svg#icon-Logo-4"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#" target="_blank">
-            <svg class="customers-logo">
-              <use href="./images/icons.svg#icon-Logo-5"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </section>
+
     <!-- Footer  Section -->
     <footer class="footer">
       <section class="footer-section">
