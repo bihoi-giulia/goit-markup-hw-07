@@ -660,28 +660,19 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   right: 317px;
 }
 /*Portofolio HTML*/
-.after-link::after {
-  content: "";
-  position: absolute;
-  width: 76px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--highlight-color);
-  bottom: 375px;
-  left: 758px;
-}
+
 .portfolio-section {
   max-width: 1200px;
   margin: 0px auto;
 }
-.project-item {
+.button {
   display: flex;
   padding: 0px;
   gap: 8px;
   margin: 100px auto 56px;
   justify-content: center;
 }
-.project-examples {
+.btn-primary {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -691,9 +682,9 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   border-radius: 4px;
   padding: 6px 22px;
 }
-.project-examples:hover,
-.project-examples:focus,
-.project-examples:active {
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
   color: var(--white-color);
   background-color: var(--highlight-color);
   cursor: pointer;
@@ -702,7 +693,15 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-list {
+.project-container {
+  display: flex;
+  padding: 0px;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 94px;
+}
+.project-subtitle {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -711,7 +710,7 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   margin-bottom: 4px;
   margin-left: 24px;
 }
-.project-profile {
+.project-text {
   font-size: 16px;
   line-height: 1.88;
   color: var(--gray-color);
@@ -719,14 +718,7 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   margin-bottom: 20px;
   margin-left: 24px;
 }
-.project-img {
-  display: flex;
-  padding: 0px;
-  gap: 30px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 94px;
-}
+
 .project-img-list {
   background-color: var(--white-color);
   border: 1px solid #eeeeee;
