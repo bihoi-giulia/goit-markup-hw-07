@@ -228,6 +228,11 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   border: 1px solid rgba(33, 150, 243, 1);
   cursor: pointer;
 }
+.terms-color {
+  color: var(--highlight-color);
+  text-decoration: underline;
+}
+/*Formular Btn*/
 .btn {
   background-color: var(--highlight-color);
   width: 200px;
@@ -247,11 +252,8 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
 .btn:hover {
   cursor: pointer;
 }
-.terms-color {
-  color: var(--highlight-color);
-  text-decoration: underline;
-}
 /*Main section */
+/*Hero section */
 .hero-container {
   background-color: var(--backgrounde-color);
   height: 600px;
