@@ -40,6 +40,7 @@ body {
   align-items: center;
   margin: 0 auto;
 }
+/*Logo*/
 .logo {
   color: var(--highlight-color);
   font-size: 26px;
@@ -53,7 +54,7 @@ body {
 .logo-text {
   color: var(--balck-color);
 }
-
+/*Nav Section */
 .nav {
   display: flex;
   padding: 0px;
@@ -74,7 +75,7 @@ body {
 .nav-link:hover {
   color: var(--highlight-color);
 }
-
+/*Contact Section */
 .contact-nav-list {
   display: flex;
   gap: 40px;
