@@ -19,9 +19,50 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
-  <!-- Form Section -->
   <body>
+    <!--Header Section -->
+    <header class="page-header">
+      <div class="page-header__inner">
+        <a class="page-header__logo" href="./index.html"
+          >Web<span class="page-header__logo-text">Studio</span></a
+        >
+
+        <div class="unstyled-list menu">
+          <div>
+            <a class="menu__item" href="./index.html">Studio </a>
+          </div>
+          <div>
+            <a class="menu__item" href="./portofolio.html">Portfolio</a>
+          </div>
+          <div>
+            <a class="menu__item" href="">Contacts</a>
+          </div>
+        </div>
+
+        <div class="unstyled-list contact-menu">
+          <div>
+            <a class="contact-menu__item" href="mailto:info@devstudio.com">
+              <svg class="contact-menu__icon">
+                <use href="./images/icons.svg#icon-envelope-hover"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </div>
+          <div>
+            <a class="contact-menu__item" href="tel:+12127724150">
+              <svg class="contact-menu__phone-icon">
+                <use href="./images/icons.svg#icon-telephone"></use>
+              </svg>
+              +1 212-772-4150</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Form Section -->
+
     <div class="modal is-hidden" data-modal>
       <div class="inner-modal">
         <div class="form">
@@ -93,58 +134,17 @@
         </div>
       </div>
     </div>
-    <!--Header Section -->
-    <header class="page-header">
-      <section class="header-section">
-        <a class="logo" href="./index.html"
-          >Web<span class="logo-text">Studio</span></a
-        >
-
-        <div class="unstyled-list nav">
-          <div>
-            <a class="nav-link" href="./index.html">Studio </a>
-          </div>
-          <div>
-            <a class="nav-link" href="./portofolio.html">Portfolio</a>
-          </div>
-          <div>
-            <a class="nav-link" href="">Contacts</a>
-          </div>
-        </div>
-
-        <div class="unstyled-list contact-nav-list">
-          <div class="contact-nav-item">
-            <a class="nav-contact" href="mailto:info@devstudio.com">
-              <svg class="contact-icon">
-                <use href="./images/icons.svg#icon-envelope-hover"></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </div>
-          <div class="contact-nav-item">
-            <a class="nav-contact" href="tel:+12127724150">
-              <svg class="contact-phone-icon">
-                <use href="./images/icons.svg#icon-telephone"></use>
-              </svg>
-              +1 212-772-4150</a
-            >
-          </div>
-        </div>
-      </section>
-    </header>
-
-    <!-- Main  Section -->
+    <!--Main Section -->
+    <!-- Hero Section -->
     <main>
-      <div class="hero-container">
-        <section class="hero-section">
-          <h1 class="hero-title">
-            EFFECTIVE SOLUTIONS FOR <br />
-            YOU BUSINESS
-          </h1>
-          <button class="hero-button" type="button" data-modal-open>
-            Request our service
-          </button>
-        </section>
+      <div class="hero">
+        <h1 class="hero-title">
+          EFFECTIVE SOLUTIONS FOR <br />
+          YOU BUSINESS
+        </h1>
+        <button class="hero-button" type="button" data-modal-open>
+          Request our service
+        </button>
       </div>
 
       <!-- Feature Section -->

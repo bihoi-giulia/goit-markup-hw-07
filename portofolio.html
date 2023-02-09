@@ -19,47 +19,48 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
   <!-- Header Section -->
   <body>
     <header class="page-header">
-      <section class="header-section">
-        <a class="logo" href="./index.html"
-          >Web<span class="logo-text">Studio</span></a
+      <div class="page-header__inner">
+        <a class="page-header__logo" href="./index.html"
+          >Web<span class="page-header__logo-text">Studio</span></a
         >
 
-        <ul class="unstyled-list nav">
-          <li>
-            <a class="nav-link" href="./index.html">Studio </a>
-          </li>
-          <li>
-            <a class="nav-link" href="./portofolio.html">Portfolio</a>
-          </li>
-          <li>
-            <a class="nav-link" href="">Contacts</a>
-          </li>
-        </ul>
+        <div class="unstyled-list menu">
+          <div>
+            <a class="menu__item" href="./index.html">Studio </a>
+          </div>
+          <div>
+            <a class="menu__item" href="./portofolio.html">Portfolio</a>
+          </div>
+          <div>
+            <a class="menu__item" href="">Contacts</a>
+          </div>
+        </div>
 
-        <ul class="unstyled-list contact-nav-list">
-          <li class="contact-nav-item">
-            <a class="nav-contact" href="mailto:info@devstudio.com">
-              <svg class="contact-icon">
+        <div class="unstyled-list contact-menu">
+          <div>
+            <a class="contact-menu__item" href="mailto:info@devstudio.com">
+              <svg class="contact-menu__icon">
                 <use href="./images/icons.svg#icon-envelope-hover"></use>
               </svg>
               info@devstudio.com</a
             >
-          </li>
-          <li class="contact-nav-item">
-            <a class="nav-contact" href="tel:+12127724150">
-              <svg class="contact-phone-icon">
+          </div>
+          <div>
+            <a class="contact-menu__item" href="tel:+12127724150">
+              <svg class="contact-menu__phone-icon">
                 <use href="./images/icons.svg#icon-telephone"></use>
               </svg>
               +1 212-772-4150</a
             >
-          </li>
-        </ul>
-      </section>
+          </div>
+        </div>
+      </div>
     </header>
     <!--Main -->
     <main>

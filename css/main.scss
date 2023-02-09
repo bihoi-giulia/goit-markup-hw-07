@@ -1,1 +1,33 @@
-@import "./utils/vars.scss";
+@import "../sass/utils/vars.scss";
+@import "../sass/components/header";
+body {
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.02em;
+}
+.unstyled-list {
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-end: 0;
+  margin-block-start: 0;
+  padding-inline-start: 0;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1200px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.gray-bg {
+  background-color: var(--gray-bc);
+}
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-end: 0;
+  margin-inline-start: 0;
+}
