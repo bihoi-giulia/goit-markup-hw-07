@@ -32,9 +32,7 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
-.gray-bg {
-  background-color: var(--gray-bc);
-}
+
 p {
   margin-block-start: 0;
   margin-block-end: 0;
@@ -428,8 +426,9 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
 /*Team  Section */
 .grid {
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--white-color);
+  background: var(--gray-bc);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  height: 708px;
 }
 .grid__container {
   display: flex;
@@ -439,6 +438,9 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   padding: 0;
   justify-content: space-between;
   text-align: center;
+}
+.grid__card {
+  background-color: var(--white-color);
 }
 .grid__title {
   font-weight: 500;
@@ -508,17 +510,17 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   background-color: var(--backgrounde-color);
   height: 251px;
 }
-.footer-container {
+.footer__container {
   display: flex;
   max-width: 1200px;
   margin: 0px auto;
 }
-.footer-contact {
+.footer__contact {
   margin: 0;
   padding-top: 60px;
   display: inline-block;
 }
-.logo {
+.footer__logo {
   color: var(--highlight-color);
   font-size: 26px;
   line-height: 1.19;
@@ -527,34 +529,30 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   margin-bottom: 25px;
 }
 
-.footer-logo {
+.footer__logo-text {
   color: var(--white-color);
 }
 
-.contact-footer-list {
-  padding: 0px;
-}
-.contact-address {
+.footer-contact {
   color: var(--white-color);
   font-style: normal;
   margin-top: 28px;
 }
-.contact-footer {
+.footer-contact__address {
+  margin-top: 10px;
+}
+
+.footer-contact__link {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
-.contact-footer:hover {
-  color: var(--highlight-color);
-}
-.contact {
-  padding-top: 12px;
-}
-.social-section {
+
+.social-footer {
   margin-top: 75px;
   margin-left: 94px;
 }
-.social-footer {
+.social-footer__text {
   margin: 0px;
   font-weight: 700;
   font-size: 14px;

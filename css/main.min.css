@@ -184,8 +184,9 @@
 }
 .grid {
   border-radius: 0px 0px 4px 4px;
-  background-color: var(--white-color);
+  background-color: var(--gray-bc);
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  height: 708px;
 }
 .grid__container {
   display: flex;
@@ -195,6 +196,9 @@
   padding: 0;
   justify-content: space-between;
   text-align: center;
+}
+.grid__card {
+  background-color: var(--white-color);
 }
 .grid__title {
   font-weight: 500;
