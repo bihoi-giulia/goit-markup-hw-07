@@ -582,7 +582,7 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
 .social-footer__link:hover {
   background: var(--highlight-color);
 }
-.social-icon__footer {
+.social-footer__icon {
   width: 20px;
   height: 20px;
   fill: var(--white-color);
