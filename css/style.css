@@ -562,24 +562,15 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   color: var(--white-color);
   margin-bottom: 20px;
 }
-.subscribe-footer-text {
-  margin: 0px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white-color);
-  margin-bottom: 20px;
-}
-.social-footer-list {
+
+.social-footer__list {
   display: flex;
   justify-content: center;
   gap: 10px;
   padding: 0px;
   margin-top: 20px;
 }
-.social-footer-link {
+.social-footer__link {
   width: 44px;
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
@@ -588,13 +579,23 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   justify-content: center;
   align-items: center;
 }
-.social-footer-link:hover {
+.social-footer__link:hover {
   background: var(--highlight-color);
 }
-.social-icon-footer {
+.social-icon__footer {
   width: 20px;
   height: 20px;
   fill: var(--white-color);
+}
+.subscribe-footer__text {
+  margin: 0px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
 }
 .subscribe-btn {
   background-color: var(--highlight-color);
