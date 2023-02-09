@@ -1,5 +1,8 @@
 @import "../sass/utils/vars.scss";
 @import "../sass/components/header";
+@import "../sass/components/hero.scss";
+@import "../sass/components/feature";
+@import "../sass/components/what-we-do";
 body {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.02em;
@@ -30,4 +33,13 @@ p {
   margin-block-end: 0;
   margin-inline-end: 0;
   margin-inline-start: 0;
+}
+.subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
 }

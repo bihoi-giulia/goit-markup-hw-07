@@ -67,7 +67,16 @@ p {
 .page-header__logo-text {
   color: var(--balck-color);
 }
-/*Nav Section */
+.subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+/*Menu Section */
 .menu {
   display: flex;
   padding: 0px;
@@ -88,7 +97,7 @@ p {
 .menu__item:hover {
   color: var(--highlight-color);
 }
-/*Contact Section */
+/*Contact menu */
 .contact-menu {
   display: flex;
   gap: 40px;
@@ -349,7 +358,7 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
 }
 
 /*Feature Section */
-.feature-section {
+.feature {
   max-width: 1200px;
   margin: 94px auto 30px;
 }
@@ -357,9 +366,8 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
 .feature-list {
   display: flex;
   justify-content: space-between;
-  padding: 0px;
 }
-.feature-technology-list {
+.feature-technology {
   background-color: var(--gray-bc);
   border-radius: 4px;
   width: 270px;
@@ -374,22 +382,20 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
 }
 .feature-container {
   max-width: 1200px;
-  height: 101px;
+
   margin: 0 auto;
 }
-.feature-description {
+.feature-container-description {
   display: flex;
   justify-content: space-between;
-  padding: 0;
-  margin-bottom: 94px;
 }
-.feature-title {
+.feature-container-title {
   font-weight: 700;
-  margin-bottom: 10px;
   width: 270px;
   margin: 0 auto;
+  margin-bottom: 10px;
 }
-.feature-text {
+.feature-container-text {
   font-size: 14px;
   line-height: 1.71;
   color: var(--gray-color);
@@ -397,32 +403,22 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   height: 75px;
 }
 /*What we do   Section */
-.container-section {
+.container {
   margin: 94px auto;
   max-width: 1200px;
 }
-.subtitle {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin-top: 94px;
-  margin-bottom: 50px;
-}
 
-.img-list {
+.container-list {
   display: flex;
-  padding: 0;
   justify-content: space-between;
 }
-.container-img {
+.container-grid {
   position: relative;
 }
-.img-device {
+.container-img {
   display: block;
 }
-.overlay-img {
+.container-overlay {
   position: absolute;
   bottom: 0;
   background: rgba(47, 48, 58, 0.8);
