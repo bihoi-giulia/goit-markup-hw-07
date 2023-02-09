@@ -293,74 +293,81 @@
     <!-- Footer  Section -->
 
     <footer class="footer">
-      <section class="footer-section">
-        <div class="footer-contact">
-          <a class="logo link" href="./index.html"
-            >Web<span class="footer-logo">Studio</span></a
+      <div class="footer__container">
+        <div class="footer__contact">
+          <a class="footer__logo" href="./index.html"
+            >Web<span class="footer__logo-text">Studio</span></a
           >
-          <address>
-            <ul class="unstyled-list contact-footer-list">
-              <li>
-                <p class="contact-address">695 Park Ave, NY 10065, USA</p>
-              </li>
-              <li>
-                <a class="contact-footer link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="contact">
-                <a class="contact-footer link" href="tel:+12127724150"
-                  >+1 212-772-4150</a
-                >
-              </li>
-            </ul>
-          </address>
+
+          <div class="unstyled-list">
+            <div>
+              <p class="footer-paragraph">695 Park Ave, NY 10065, USA</p>
+            </div>
+            <div class="footer__address">
+              <a class="footer__link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </div>
+            <div class="footer__address">
+              <a class="footer__link" href="tel:+12127724150"
+                >+1 212-772-4150</a
+              >
+            </div>
+          </div>
         </div>
-        <div class="social-section">
-          <h3 class="social-footer">FIND US ON</h3>
-          <ul class="unstyled-list social-footer-list">
+        <div class="social-footer">
+          <h3 class="social-footer__text">FIND US ON</h3>
+          <div class="unstyled-list social-footer__list">
             <li>
-              <a href="#" target="_blank" class="social-footer-link">
-                <svg class="social-icon-footer">
+              <a href="#" target="_blank" class="social-footer__link">
+                <svg class="social-footer__icon">
                   <use href="./images/icons.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" target="_blank" class="social-footer-link">
-                <svg class="social-icon-footer">
+              <a href="#" target="_blank" class="social-footer__link">
+                <svg class="social-footer__icon">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" target="_blank" class="social-footer-link">
-                <svg class="social-icon-footer">
+              <a href="#" target="_blank" class="social-footer__link">
+                <svg class="social-footer__icon">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="#" target="_blank" class="social-footer-link">
-                <svg class="social-icon-footer">
+              <a href="#" target="_blank" class="social-footer__link">
+                <svg class="social-footer__icon">
                   <use href="./images/icons.svg#icon-linkedin-1"></use>
                 </svg>
               </a>
             </li>
-          </ul>
+          </div>
         </div>
-        <div class="social-section">
-          <h3 class="subscribe-footer-text">Subscribe to the newsletter</h3>
+        <div class="social-footer">
+          <h3 class="social-footer__subscribe-text">
+            Subscribe to the newsletter
+          </h3>
 
           <input
-            class="input-footer"
+            class="social-footer__input"
             type="e-mail"
             name="e-mail"
             placeholder="E-mail"
           />
-          <button type="submit" class="subscribe-btn">Subscribe</button>
+
+          <button type="submit" class="social-footer__btn">
+            Subscribe
+            <svg class="social-footer__icon-send">
+              <use href="./images/icons2.svg#icon-icon-send"></use>
+            </svg>
+          </button>
         </div>
-      </section>
+      </div>
     </footer>
   </body>
 </html>

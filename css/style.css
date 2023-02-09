@@ -516,7 +516,6 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   margin: 0px auto;
 }
 .footer__contact {
-  margin: 0;
   padding-top: 60px;
   display: inline-block;
 }
@@ -533,19 +532,18 @@ input[type="checkbox"]:checked + .checkbox-replace svg {
   color: var(--white-color);
 }
 
-.footer-contact {
+.footer-paragraph {
   color: var(--white-color);
   font-style: normal;
   margin-top: 28px;
 }
-.footer-contact__address {
+.footer__address {
   margin-top: 10px;
 }
 
-.footer-contact__link {
+.footer__link {
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
 }
 
 .social-footer {
