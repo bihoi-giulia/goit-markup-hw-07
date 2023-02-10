@@ -32,6 +32,14 @@ a {
   margin-left: auto;
   margin-right: auto;
 }
+.subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
 
 p {
   margin-block-start: 0;
@@ -65,15 +73,7 @@ p {
 .page-header__logo-text {
   color: var(--balck-color);
 }
-.subtitle {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  letter-spacing: 0.03em;
-  text-align: center;
-  margin-top: 94px;
-  margin-bottom: 50px;
-}
+
 /*Menu Section */
 .menu {
   display: flex;
