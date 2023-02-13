@@ -634,18 +634,18 @@ input[type="checkbox"]:checked + .imput__checkbox-replace svg {
 }
 /*Portofolio HTML*/
 
-.portfolio-section {
+.portfolio {
   max-width: 1200px;
   margin: 0px auto;
 }
-.button {
+.portfolio__button {
   display: flex;
   padding: 0px;
   gap: 8px;
   margin: 100px auto 56px;
   justify-content: center;
 }
-.btn-primary {
+.portfolio__btn-primary {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -655,9 +655,9 @@ input[type="checkbox"]:checked + .imput__checkbox-replace svg {
   border-radius: 4px;
   padding: 6px 22px;
 }
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active {
+.portfolio__btn-primary:hover,
+.portfolio__btn-primary:focus,
+.portfolio__btn-primary:active {
   color: var(--white-color);
   background-color: var(--highlight-color);
   cursor: pointer;
@@ -666,13 +666,58 @@ input[type="checkbox"]:checked + .imput__checkbox-replace svg {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.project-container {
+.portfolio-grid {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+.portfolio-grid__container {
   display: flex;
   padding: 0px;
   gap: 30px;
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 94px;
+}
+
+.portfolio-grid__img-list {
+  background-color: var(--white-color);
+  border: 1px solid #eeeeee;
+}
+.portfolio-grid__img-list:hover,
+.portfolio-grid__img-list:focus,
+.portfolio-grid__img-list:active {
+  cursor: pointer;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-grid__img {
+  display: block;
+}
+.overlay {
+  position: relative;
+  overflow: hidden;
+}
+.overlay__container {
+  position: absolute;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translatey(100%);
+  transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--white-color);
+  text-align: left;
+  padding: 45px 24px 0;
+}
+.portfolio-grid__img-list:hover .overlay__container {
+  transform: translatey(0);
 }
 .project-subtitle {
   font-weight: 700;
@@ -690,45 +735,4 @@ input[type="checkbox"]:checked + .imput__checkbox-replace svg {
   margin-top: 0px;
   margin-bottom: 20px;
   margin-left: 24px;
-}
-
-.project-img-list {
-  background-color: var(--white-color);
-  border: 1px solid #eeeeee;
-}
-.project-img-list:hover,
-.project-img-list:focus,
-.project-img-list:active {
-  cursor: pointer;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.img-portfolio {
-  display: block;
-}
-.overlay-container {
-  position: relative;
-  overflow: hidden;
-}
-.overlay {
-  position: absolute;
-  background-color: rgba(33, 150, 243, 0.9);
-  transform: translatey(100%);
-  transition: transform 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  top: 0;
-  width: 100%;
-  height: 100%;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55;
-  color: var(--white-color);
-  text-align: left;
-  padding: 45px 24px 0;
-}
-.project-img-list:hover .overlay {
-  transform: translatey(0);
 }
