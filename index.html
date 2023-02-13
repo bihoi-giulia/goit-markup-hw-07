@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -64,74 +64,70 @@
     <!-- Form Section -->
 
     <div class="modal is-hidden" data-modal>
-      <div class="inner-modal">
-        <div class="form">
-          <p class="contact-text">
-            Leave your information and we'll call you back
-          </p>
+      <div class="modal__inner">
+        <p class="modal__title">
+          Leave your information and we'll call you back
+        </p>
 
-          <form autocomplete="off" style="max-width: 500px; margin: auto">
-            <div class="input-container">
-              <label class="label-text" for="name "
-                >Name<br />
-                <svg class="icon-form">
-                  <use
-                    href="./images/icons2.svg#icon-person-black-18dp-1"
-                  ></use>
-                </svg>
-                <input class="input-field" type="text" name="name" />
-              </label>
-            </div>
+        <form autocomplete="off" style="max-width: 500px; margin: auto">
+          <div class="input">
+            <label class="input__label-text" for="name "
+              >Name<br />
+              <svg class="imput__icon">
+                <use href="./images/icons2.svg#icon-person-black-18dp-1"></use>
+              </svg>
+              <input class="input__field" type="text" name="name" />
+            </label>
+          </div>
 
-            <div class="input-container">
-              <label class="label-text" for="phone "
-                >Telephone<br />
-                <svg class="icon-form">
-                  <use
-                    href="./images/icons2.svg#icon-phone-black-18dp-1
+          <div class="input">
+            <label class="input__label-text" for="phone "
+              >Telephone<br />
+              <svg class="imput__icon">
+                <use
+                  href="./images/icons2.svg#icon-phone-black-18dp-1
                   "
-                  ></use>
-                </svg>
-                <input class="input-field" type="tel" name="tel" />
-              </label>
-            </div>
+                ></use>
+              </svg>
+              <input class="input__field" type="tel" name="tel" />
+            </label>
+          </div>
 
-            <div class="input-container">
-              <label class="label-text" for="e-mail "
-                >E-mail<br />
-                <svg class="icon-form">
-                  <use href="./images/icons2.svg#icon-email-black-18dp-1"></use>
+          <div class="input">
+            <label class="input__label-text" for="e-mail "
+              >E-mail<br />
+              <svg class="imput__icon">
+                <use href="./images/icons2.svg#icon-email-black-18dp-1"></use>
+              </svg>
+              <input class="input__field" type="e-mail" name="e-mail" />
+            </label>
+          </div>
+          <div class="input">
+            <label class="input__label-text">
+              Comments <br />
+              <textarea
+                class="imput__textarea"
+                name="comments"
+                rows="5"
+                placeholder="Enter the text"
+              ></textarea>
+            </label>
+          </div>
+          <div class="input-checkbox">
+            <label class="terms">
+              <input type="checkbox" name="terms" />
+              <span class="imput__checkbox-replace">
+                <svg width="11px" height="8px">
+                  <use href="./images/symbol-defs.svg#icon-vector-sgv"></use>
                 </svg>
-                <input class="input-field" type="e-mail" name="e-mail" />
-              </label>
-            </div>
-            <div class="input-container">
-              <label class="label-text">
-                Comments <br />
-                <textarea
-                  class="textarea-field"
-                  name="comments"
-                  rows="5"
-                  placeholder="Enter the text"
-                ></textarea>
-              </label>
-            </div>
-            <div class="input-checkbox">
-              <label class="terms">
-                <input type="checkbox" name="terms" />
-                <span class="checkbox-replace">
-                  <svg width="11px" height="8px">
-                    <use href="./images/symbol-defs.svg#icon-vector-sgv"></use>
-                  </svg>
-                </span>
-                I agree with the letter and accept the
-                <span class="terms-color"> Terms and Conditions</span>
-              </label>
-            </div>
-            <button type="submit" class="btn">Send</button>
-          </form>
-          <button class="close-modal" data-modal-close>X</button>
-        </div>
+              </span>
+              I agree with the letter and accept the
+              <span class="terms-color"> Terms and Conditions</span>
+            </label>
+          </div>
+          <button type="submit" class="btn">Send</button>
+        </form>
+        <button class="close-modal" data-modal-close>X</button>
       </div>
     </div>
     <!--Main Section -->
