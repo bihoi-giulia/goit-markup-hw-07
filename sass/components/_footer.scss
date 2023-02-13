@@ -6,7 +6,8 @@
     max-width: 1200px;
     margin: 0px auto;
   }
-  &__contect {
+  &__contact {
+    margin: 0;
     padding-top: 60px;
     display: inline-block;
   }
@@ -24,11 +25,16 @@
   &__address {
     color: var(--white-color);
     font-style: normal;
-    margin-top: 28px;
+    margin-top: 10px;
   }
   &__link {
     font-style: normal;
     color: rgba(255, 255, 255, 0.6);
+  }
+  &__paragraph {
+    color: var(--white-color);
+    font-style: normal;
+    margin-top: 28px;
   }
 }
 .social-footer {

@@ -49,19 +49,19 @@ p {
 }
 /*Header styling */
 
-.page-header {
+.header {
   border-bottom: 1px solid #ececec;
   background-color: var(--white-color);
   justify-content: center;
 }
-.page-header__inner {
+.header__inner {
   max-width: 1200px;
   align-items: center;
   margin: 0 auto;
   display: flex;
 }
 /*Logo*/
-.page-header__logo {
+.header__logo {
   color: var(--highlight-color);
   font-size: 26px;
   line-height: 1.19;
@@ -70,7 +70,7 @@ p {
   margin-bottom: 25px;
 }
 
-.page-header__logo-text {
+.header__logo-text {
   color: var(--balck-color);
 }
 

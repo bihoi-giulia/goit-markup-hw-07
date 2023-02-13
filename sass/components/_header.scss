@@ -1,8 +1,8 @@
-.page-header {
+.header {
   justify-content: center;
   border-bottom: 1px solid #ececec;
   background-color: var(--white-color);
-  &__inne {
+  &__inner {
     display: flex;
     max-width: 1200px;
     align-items: center;
@@ -15,6 +15,7 @@
     font-family: "Raleway", sans-serif;
     margin-top: 24px;
     margin-bottom: 25px;
+    margin-right: 94px;
   }
   &__logo-text {
     color: var(--balck-color);
